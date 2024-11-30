@@ -182,16 +182,8 @@ wait(4)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(0, 0, 255)
 
-if not game:GetService("ReplicatedStorage").GameData.Floor.Value == "Mines" then
-caption.TextColor3 = Color3.fromRGB(0, 255, 255)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("GoodLuck",true)
-elseif game:GetService("ReplicatedStorage").GameData.Floor.Value == "Mines" then
-caption.TextColor3 = Color3.fromRGB(0, 255, 255)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("You Executed In Floors 2???",true)
-wait(3)
 caption.TextColor3 = Color3.fromRGB(255, 0, 0)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("ðŸ’€ðŸ’€ðŸ’€",true)
-end
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("GoodLuck=) Or You No Survive",true)
 
 C.Anchored = false
 
