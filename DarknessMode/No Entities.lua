@@ -181,7 +181,6 @@ require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("
 wait(4)
 caption.TextColor3 = Color3.fromRGB(255, 0, 0)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("GoodLuck=)",true)
-end
 
 C.Anchored = false
 
