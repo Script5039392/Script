@@ -21,7 +21,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "No entities",
+	Name = "No entity",
 	Callback = function()
       		OrionLib:Destroy()
               wait()
@@ -30,7 +30,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Add Entities",
+	Name = "Add Entity",
 	Callback = function()
       		OrionLib:Destroy()
               wait()
