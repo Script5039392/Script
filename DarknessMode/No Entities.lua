@@ -367,7 +367,7 @@ Lighting.FogEnd = 110
 
 elseif not workspace:FindFirstChild("SeekMoving") then
 
-Lighting.FogEnd = 40
+Lighting.FogEnd = 60
 
 end
 
@@ -461,39 +461,5 @@ end)()
 coroutine.wrap(function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Hotel-Plus-Plus/main/Entities/BaseEntityRemux.lua"))()
-
-end)()
-
-------------  Floors
-
-coroutine.wrap(function()
-
-while true do wait(3)
-
-local function ConvertRoom(Room, doWait)
-    if doWait then
-        task.wait(3)
-    end
-    if Room:IsA("Model") then
-        if tonumber(Room.Name) then
-            for _, v in pairs(Room:GetDescendants()) do
-                if v:IsA("Part") or v:IsA("BasePart") or v:IsA("MeshPart") or v:IsA("UnionOperation") then
-                    if v.Material == Enum.Material.Wood or v.Material == Enum.Material.WoodPlanks then
-                        v.Color = Color3.fromRGB(0, 0, 0)
-                        v.Material = Enum.Material.DiamondPlate
-                        v.MaterialVariant = ""
-                    end
-                end
-            end
-        end
-    end
-end
-
-workspace.CurrentRooms.ChildAdded:Connect(function(r)
-    ConvertRoom(r, true)
-end)
-ConvertRoom(workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value])
-
-end
 
 end)()
