@@ -424,7 +424,7 @@ while true do wait(8)
 
 local redtweeninfo = TweenInfo.new(3)
 
-local redinfo = {Color = Color3.new(1, 0, 0)}
+local redinfo = {Color = Color3.new(0, 0, 0)}
 
 ----------
 
