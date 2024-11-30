@@ -98,7 +98,7 @@ messageLabel2.Font = Enum.Font.SourceSansBold
 messageLabel2.TextColor3 = Color3.fromRGB(255, 0, 0)
 messageLabel2.BackgroundTransparency = 1
 messageLabel2.AnchorPoint = Vector2.new(0.5, 1)
-messageLabel2.Position = UDim2.new(0.8, 0, 1, -200)
+messageLabel2.Position = UDim2.new(0.85, 0, 1, -200)
 messageLabel2.Size = UDim2.new(0, 200, 0, 30)
 messageLabel2.Parent = screenGui
 wait(1)
