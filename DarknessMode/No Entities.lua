@@ -179,7 +179,7 @@ local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFr
 caption.TextColor3 = Color3.fromRGB(0, 100, 0)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Script Sync's Accordingly For Started Room",true)
 wait(4)
-caption.TextColor3 = Color3.fromRGB(255, 0, 0)
+caption.TextColor3 = Color3.fromRGB(0, 100, 255)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("GoodLuck=)",true)
 
 C.Anchored = false
@@ -356,7 +356,7 @@ Lighting.FogEnd = 110
 
 elseif not workspace:FindFirstChild("SeekMoving") then
 
-Lighting.FogEnd = 60
+Lighting.FogEnd = 50
 
 end
 
@@ -424,7 +424,7 @@ while true do wait(8)
 
 local redtweeninfo = TweenInfo.new(3)
 
-local redinfo = {Color = Color3.new(1, 0, 0)}
+local redinfo = {Color = Color3.new(0, 0, 0)}
 
 ----------
 
