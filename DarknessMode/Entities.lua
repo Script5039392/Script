@@ -356,7 +356,7 @@ Lighting.FogEnd = 110
 
 elseif not workspace:FindFirstChild("SeekMoving") then
 
-Lighting.FogEnd = 60
+Lighting.FogEnd = 45
 
 end
 
