@@ -59,22 +59,22 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Notification",
 	Text = "Doors Darkness Mode Has Execute!",
-	Icon = GitPNG("https://github.com/Hastloxhsx/Images/blob/main/Smiler.png?raw=true", "smilerbalge")
+	Icon = GitPNG("https://github.com/Hastloxhsx/Images/blob/main/Smiler.png?raw=true", "gggggggg")
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Notification",
 	Text = "Wait 5-10s",
-	Icon = GitPNG("https://github.com/Hastloxhsx/Images/blob/main/Smiler.png?raw=true", "smilerbalge")
+	Icon = GitPNG("https://github.com/Hastloxhsx/Images/blob/main/Smiler.png?raw=true", "smileyyyyyy")
 })
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 12
 
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(255, 0, 0)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Darkness Mode Script Succesfully Executed. Script By Nowhywhats",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Darkness Mode Script Succesfully Executed.Script By Nowhywhats[Zixsoed]",true)
 
-local prefix = "[Sever Doors Mode]: "
+local prefix = "[Sever Doors Mode]:"
 local message = "Darkness Mode Rework script succesfully loaded"
 local message2 = "Script Made By Nowhywhat[Zixsoed]"
 game.TextChatService.TextChannels.RBXGeneral:DisplaySystemMessage(`<font color='#ff0000'>{prefix..message}</font>`)
@@ -178,7 +178,7 @@ C.Anchored = true
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(0, 100, 0)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Script Sync's Accordingly For Started Room",true)
-wait(4)
+wait(5)
 caption.TextColor3 = Color3.fromRGB(0, 100, 255)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("GoodLuck=)",true)
 
