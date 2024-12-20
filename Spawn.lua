@@ -765,7 +765,7 @@ spawner.Run = function(entityTable)
 	
 		if spawnPoint then
 			-- Spawning
-			model:PivotTo(spawnPoint.CFrame + Vector3.new(0, config.Entity.HeightOffset, 0))
+			model.CFrame = game.Workspace.CurrentRooms:GetChildren()[#game.Workspace.CurrentRooms:GetChildren() - 1].Parts.Floor.CFrame + Vector3.new(0,config.Entity.HeightOffset,0)
 			model.Parent = workspace
 			task.spawn(entityTable.RunCallback, entityTable, "OnSpawned") -- OnSpawned
 	
