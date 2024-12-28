@@ -87,31 +87,6 @@ chatConfig.BackgroundTransparency = 0.5 --Background Transparency
 chatConfig.Font = Enum.Font.SourceSansBold --Text Font
 chatConfig.TextColor3 = Color3.fromRGB(255, 255, 0) --Text Color
 
-local screenGui = Instance.new("ScreenGui")
-screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-local messageLabel2 = Instance.new("TextLabel")
-local messageLabel = Instance.new("TextLabel")
-
-messageLabel2.Text = "Darkness Mode Made By Nowhywhat"
-messageLabel2.TextSize = 25
-messageLabel2.Font = Enum.Font.SourceSansBold
-messageLabel2.TextColor3 = Color3.fromRGB(255, 0, 0)
-messageLabel2.BackgroundTransparency = 1
-messageLabel2.AnchorPoint = Vector2.new(0.5, 1)
-messageLabel2.Position = UDim2.new(0.85, 0, 1, -200)
-messageLabel2.Size = UDim2.new(0, 200, 0, 30)
-messageLabel2.Parent = screenGui
-wait(1)
-messageLabel.Text = "Darkness Mode"
-messageLabel.TextSize = 35
-messageLabel.Font = Enum.Font.SourceSansBold
-messageLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
-messageLabel.BackgroundTransparency = 1
-messageLabel.AnchorPoint = Vector2.new(0.5, 1)
-messageLabel.Position = UDim2.new(0.9, 0, 1, -250)
-messageLabel.Size = UDim2.new(0, 200, 0, 30)
-messageLabel.Parent = screenGui
-
 wait(3)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(192, 192, 192)
