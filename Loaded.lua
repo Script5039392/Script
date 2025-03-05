@@ -1,5 +1,5 @@
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Mode Has Shutdown, Sorry You",true)
-wait(2.6)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("You can test new mode ",true)
-wait(1)
-setclipboard("loadstring(game:HttpGet('https://pastefy.app/YAx1dSmY/raw'))() ")
+local main_game = require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Jumpscares.Ambush)(main_game)
+require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Jumpscares.Death)(main_game)
+game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.Health - 1000
+game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Ambush"
